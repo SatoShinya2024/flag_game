@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>旗上げゲーム|1人用</title>
+</head>
+<body>
+    <div class="announcement_wrapper" id="announcement_wrapper">
+        <div class="start_button_wrapper">
+            <div><button onclick="game_start()">ゲームスタート</button></div>
+            <div>
+                <select name="difficulty_selection" class="difficulty_selection" id="difficulty_selection">
+                    <option value="basic">普通</option>
+                    <option value="hard">難しい</option>
+                    <option value="very_hard">とても難しい</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="main_contents">
+        <div class="player_wrapper">
+            <div class="answer" id="player01_answer"></div>
+            <div class="human_wrapper">
+                <img src="img/player01/pause01.png" alt="" class="player" id="player01">
+            </div>
+            <div class="key_wrapper">
+                <div><span style="color: red; font-weight: bold;">赤</span>:q</div>
+                <div><span style="color: white; font-weight: bold;">白</span>:w</div>
+            </div>
+            <div class="score">得点：<span id="player01_score"></span></div>
+        </div>
+    </div>
+
+    <dialog class="dialog_result" id="dialog_result">
+        <h1>結果発表</h1>
+        <div class="score_display" id="score_display">
+            得点：<span id="score_number"></span>
+        </div>
+        <div class="result_message">お疲れさまでした！</div>
+        <div class="result_button_wrapper">
+            <button onclick="location.href='index.html'">トップページに戻る</button>
+            <button onclick="location.reload()">もう一度遊ぶ</button>
+        </div>
+    </dialog>
+    
+    
+    <script src="./flag_game.js"></script>
+    <script>
+        const player01 = new Player("q", "w", "player01", "あなた");
+        const players_array = [player01];
+    </script>
+</body>
+</html>

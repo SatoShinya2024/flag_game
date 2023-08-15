@@ -1,0 +1,130 @@
+.game_title{
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+}
+.button_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    justify-content: space-around;
+}
+
+body{
+    background-image: url("img/background01.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+button{
+    background-color: #eb6100;
+    font-size: 30px; 
+    border-radius: 100vh; 
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background: #f56500;
+}
+.announcement_wrapper{
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
+    font-size: 60px;
+    font-weight: 500;
+    height: 100px;
+}
+.start_button_wrapper{
+    text-align: center;
+}
+.difficulty_selection{
+    font-size: 20px;
+    border-radius: 1vh;
+    font-family:sans-serif;
+    text-align: center;
+}
+.main_contents{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 180px;
+}
+.answer{
+    text-align: center;
+    margin: 0 auto;
+    height: 50px;
+}
+.answer img{
+    width: 50px;
+    height: 50px;
+}
+.human_wrapper{
+    height: 300px;
+}
+.player{
+    height: 100%;
+}
+.player_name{
+    font-weight: bold;
+}
+.key_wrapper{
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* .fade_text{
+    animation-name:fadeLeftAnime;
+    animation-duration:0.1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    text-align: left;
+    margin: 0 auto;
+    width: 500px;
+} */
+@keyframes fadeLeftAnime{
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.dialog_result{
+    position: absolute;
+    bottom: 100px;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    border-radius: 7%;
+    background-color:azure;
+}
+
+.score_display{
+    font-size: 30px;
+    margin: 50px auto;
+}
+
+.result_message{
+    font-size: 30px;
+    margin: 50px auto;
+
+}
+
+.result_button_wrapper{
+    display: flex;
+    justify-content: space-around;
+}
